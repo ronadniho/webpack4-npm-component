@@ -1,15 +1,17 @@
 import priceInventoryCalendar from "./priceInventoryCalendar/priceInventoryCalendar";
 import DialogGreen from "./DialogGreen/DialogGreen";
-import 'font-awesome/css/font-awesome.css'
-import '@/assets/css/common.css'
-priceInventoryCalendar.install = Vue =>
-  Vue.component(priceInventoryCalendar.name, priceInventoryCalendar);
-DialogGreen.install = Vue =>
-  Vue.component(DialogGreen.name, DialogGreen);
+import "@/assets/css/common.css";
+
+const components = [priceInventoryCalendar, DialogGreen];
+const install = (Vue, option = {}) => {
+  //全局注册所有组件
+  components.forEach((component) => {
+    Vue.component(component.name, component);
+  });
+};
 
 export default {
-  install: Vue =>
-    Vue.component(priceInventoryCalendar.name, priceInventoryCalendar),
-    DialogGreen,
-    priceInventoryCalendar
+  install,
+  DialogGreen,
+  priceInventoryCalendar,
 };

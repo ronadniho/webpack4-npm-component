@@ -11,8 +11,7 @@ module.exports = merge(webpackBase, {
     filename: "build.js",
     publicPath: "/dist/",
   },
-  
-  devtool: "eval-source-map",
+  devtool: '#eval-source-map',
   devServer: {
     publicPath: "/dist/",
     historyApiFallback: true,

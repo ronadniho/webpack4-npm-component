@@ -1,6 +1,6 @@
 {
-  "name": "heg-components",
-  "version": "1.0.0",
+  "name": "heg-component",
+  "version": "1.0.1",
   "description": "",
   "private": false,
   "main": "index.js",

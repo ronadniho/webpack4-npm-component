@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <priceInventoryCalendar/>
     <priceInventoryCalendar
       :calendarData="calendarData" 
       :addInventoriesFun="addInventoriesFun"
@@ -12,7 +13,7 @@
 </template>
 
 <script>
-import priceInventoryCalendar from "@/components/priceInventoryCalendar/priceInventoryCalendar";
+// import priceInventoryCalendar from "@/components/priceInventoryCalendar/priceInventoryCalendar";
 import {
   queryRateInventory,
   AddCalendarInventory,
@@ -27,7 +28,7 @@ import {
 } from "@/assets/js/utils";
 export default {
   name: "app",
-  components: { priceInventoryCalendar },
+  // components: { priceInventoryCalendar },
   data() {
     return {
       calendarData: {
